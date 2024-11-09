@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Hangman
+{% endblock %}
+
+{% block main %}
+
+<body>
+    <h1>
+        Hangman Menu
+    </h1>
+    
+    <form action="/game" class="inline">
+        
+        <div class="btn-group" role="group">
+            
+            <button class="float-left submit-button", name="submitter", value="easy">Easy</button>
+            <button class="float-left submit-button", name="submitter", value="medium">Medium</button>
+            <button class="float-left submit-button", name="submitter", value="difficult">Difficult</button>
+            
+        </div>
+        
+    </form>
+    
+</body>
+
+
+{% endblock %}

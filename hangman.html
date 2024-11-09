@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Hangman
+{% endblock %}
+
+{% block main %}
+    
+    
+    <p>Hello world</p>
+    
+    <h2>Hangman!</h2>
+    
+    <h1 type="under">
+        
+        {{ wrd }}
+        
+    </h1>
+    
+    <h3>
+        Lives: {{ lives }}
+    </h3>
+    
+    <form action="/" method="POST">
+        
+        <div class="form-group">
+            
+            <p>Single Letters</p>
+            <input autocomplete="off" name="single" type="text" minlength="1" maxlength="1">
+            
+        </div>
+        
+        <input type="submit">
+        
+    </form>
+    
+    <h4>Incorrect guesses:</h4>
+    
+    <p>
+        {% for guessed in guess %}
+        
+            {{ guessed.letter }},
+        
+        {% endfor %}
+
+    </p>
+
+{% endblock %}
+
+ 

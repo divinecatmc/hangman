@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Hangman
+{% endblock %}
+
+{% block main %}
+
+<body type="rick">
+    <h1>
+        You lose!
+    </h1>
+    
+    <h2>The word was {{ word }}</h2>
+    <audio controls autoplay loop>
+        <source src="https://sound.peal.io/ps/audios/000/024/145/original/youtube_24145.mp3?1544558546" type="audio/mpeg">
+    </audio>
+</body>
+
+
+{% endblock %}
